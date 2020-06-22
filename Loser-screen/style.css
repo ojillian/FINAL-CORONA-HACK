@@ -1,0 +1,30 @@
+
+.background{
+    margin: auto;
+    background: #E8FCFF;
+    border: 3px solid #5ECCDD;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+h2{
+    font-family: Trebuchet Ms;
+}
+
+button{
+    cursor: pointer;
+    border: 3px solid #5ECCDD;
+    background-color: #E8FCFF;
+    font-size: 15px;
+    font-family: Trebuchet Ms;
+    color: #5ECCDD;
+    height: 40px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(76, 191, 209);
+    color: rgb(200, 212, 214);
+}

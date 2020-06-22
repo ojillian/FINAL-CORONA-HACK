@@ -1,0 +1,60 @@
+body {
+    background-image: url(https://www.discovermuskoka.ca/content/uploads/sunset-header-image.jpg);
+}
+
+.buttons{
+    /* margin-left: 25%; */
+    /* justify-content: center;
+    align-content: center; */
+    margin: auto;
+
+}
+
+.game {
+    cursor: pointer;
+    font-family: Trebuchet Ms;
+    font-size: 20pt;
+    color: #5ce2fa;
+    border-color: #2ccacf96;
+    height: 40px;
+    width: 300px;
+    transition: 0.3s;
+    position: fixed;
+    border: none;
+    background: #45f7fd7e;
+    text-align: center;
+}
+
+.chat{
+    cursor: pointer;
+    background: #acfcb186;
+    font-family: Trebuchet Ms;
+    font-size: 20pt;
+    color: #00f010;
+    border-color: #2bc5358f;
+    height: 40px;
+    width: 300px;
+    transition: 0.3s;
+    border: none;
+}
+
+.game:hover{
+    background-color: #3cd6db;
+    color: #5a6a6b;
+}
+
+.chat:hover{
+    background-color: #51d35a;
+    color: #617462;
+}
+
+.title{
+    background-color: rgba(0, 0, 0, 0.267);
+    color: rgba(255, 255, 255, 0.753);
+    text-align: center;
+    margin: auto;
+}
+
+div{
+    /* text-align: center; */
+}

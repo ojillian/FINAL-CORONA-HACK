@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corona Game</title>
+        <style>
+            canvas {
+                border:3px solid #5ECCDD;
+                background-color: #E8FCFF;
+            }
+        </style>
+    </head>
+    <body>
+		<h1 style="font-family: Trebuchet Ms; color: #5ECCDD">BOMB TAG</h1>
+    <div>
+      <h3 style="font-family: Trebuchet Ms; color:#E87171">
+        RED = BOMB...GET RID OF IT QUICKLY!!
+      </h3>
+    </div>
+    <div>
+      <h3 style="font-family: Trebuchet Ms; color:#74E58C">
+        GREEN = SAFE...AVOID RED AT ALL COSTS!!
+      </h3>
+    </div>
+        <canvas id="canvas"></canvas>
+        <h1 style="font-family: Trebuchet Ms; color:#5ECCDD" id="timer">15</h1>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+        <script type="text/javascript" src="/public/bromybrain.js"></script>
+        <script>
+          var timer = document.getElementById('timer');
+            var count=0;
+            socket.on('timer', function(data) {
+                count++;
+                if(data==='b'){
+                    timer.innerHTML=15;
+                    data==='c';
+                }
+                if(count%75==0){
+                  if(data==='a'){
+			              timer.innerHTML--;
+                  }
+                  if(timer.innerHTML==0){
+                  self.location= "https://Loser-screen--kevintan8.repl.co";
+                  }
+                }
+            });
+
+            if(timer<0){
+              clearInterval(x);
+              myFunction();
+            }
+        </script>
+        <div>
+          <button id="button" onclick="myFunction()" class="chat">Go back to menu</button>
+          <style>
+            #button {
+                border:3px solid #5ECCDD;
+                background-color: #E8FCFF;
+                font-size: 15px;
+                font-family: Trebuchet Ms;
+                color: #5ECCDD;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            #button:hover{
+                background-color: rgb(76, 191, 209);
+                color: rgb(200, 212, 214);
+            }
+        </style>
+        </div>
+    </body>
+</html>
